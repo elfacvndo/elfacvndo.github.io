@@ -113,3 +113,24 @@
 body {
     background-color: $secondary;
 }
+
+.menu {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.logo {
+    width: auto;
+    height: 200px;
+    margin-top: 150px;
+
+}
+
+.fas {
+    color: $white;
+    font-size: 2rem;
+}
+
+.arrow {
+    margin-top: 5rem;
+}
