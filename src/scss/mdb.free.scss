@@ -119,6 +119,10 @@ body {
     justify-content: space-around;
 }
 
+.body-logo {
+    padding-bottom: 6rem;
+}
+
 .logo {
     width: auto;
     height: 200px;
@@ -133,4 +137,60 @@ body {
 
 .arrow {
     margin-top: 5rem;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.foto-profilo{
+        width: auto;
+        height: 300px;
+ }
+
+ 
+.container .nav .active {
+    background-color: $primary !important;
+    color: $secondary !important;
+    border-bottom: 3px solid $secondary;
+    
+}
+
+.container .nav .nav-link {
+    color: $secondary !important;
+    font-size: 10;
+    font-weight: 600;
+}
+
+.container .nav .nav-link:hover {
+    background-color: rgba($color: #FFED00, $alpha: 0.8) !important;
+
+}
+
+.about {
+    .fas {
+        color: $secondary;
+        font-size: 1rem;
+    }
+
+   .data {
+    background-color: $secondary;
+    color: $primary;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 5rem;
+   }
+
+   .logo-s2i {
+    width: 150px;
+   }
+   
+   .logo-scuolacomics {
+    width: 170px;
+   }
+
+   .descrizione {
+    margin-bottom: 30px;
+   }
 }
