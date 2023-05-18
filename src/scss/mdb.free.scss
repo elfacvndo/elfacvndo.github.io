@@ -109,6 +109,21 @@
     --mdb-body-font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: $secondary;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary;
+    border-radius: 3px;
+}
+
+
 
 body {
     background-color: $secondary;
@@ -167,7 +182,28 @@ h1 {
 
 }
 
+strong,
+em {
+    font-weight: 600;
+}
+
+a {
+    color: $secondary;
+}
+a:hover{
+    background-color: $secondary;
+    color: $primary;
+}
+
+
 .about {
+
+    height: 1500px;
+     
+    .tab-pane {
+        height: 700px;
+    }
+
     .fas {
         color: $secondary;
         font-size: 1rem;
@@ -192,5 +228,20 @@ h1 {
 
    .descrizione {
     margin-bottom: 30px;
+   }
+
+   .titolo,
+   .sottotitolo {
+    font-weight: 600;
+   }
+
+   .sottotitolo {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $secondary;
+    margin-bottom: 15px;
+   }
+
+   hr {
+    border: 2px solid $secondary;
    }
 }
