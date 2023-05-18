@@ -244,4 +244,22 @@ a:hover{
    hr {
     border: 2px solid $secondary;
    }
+
+   .i-progress {
+        width: 40px;
+   }
+
+   .progress-bar {
+    background-color: $secondary;
+   }
+
+   h2 {
+    font-size: 1.5rem;
+    background-color: $secondary;
+    color: $primary;
+    border-radius: 5px;
+    width:max-content;
+    padding: 3px 15px;
+   }
 }
+
