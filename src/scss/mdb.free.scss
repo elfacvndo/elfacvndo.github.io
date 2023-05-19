@@ -116,11 +116,13 @@
 ::-webkit-scrollbar-track {
     background: $secondary;
     border-radius: 10px;
+    
 }
 
 ::-webkit-scrollbar-thumb {
     background: $primary;
     border-radius: 3px;
+    width: 3px;
 }
 
 
@@ -198,7 +200,7 @@ a:hover{
 
 .about {
 
-    height: 1500px;
+    height: 1300px;
      
     .tab-pane {
         height: 700px;
@@ -261,5 +263,54 @@ a:hover{
     width:max-content;
     padding: 3px 15px;
    }
+
+   .developer {
+    width: 35px;
+   }
+}
+
+.calltoaction {
+    height: 300px;
+
+    p {
+        font-weight: 600;
+        color: $primary;
+        font-size: 1.5rem;
+    }
+
+    a {
+        background-color: $primary;
+        color: $secondary;
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 500px;
+        text-align: center;
+        align-items: center;
+    }
+
+    a:hover {
+        background-color: $secondary;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+
+  
+}
+
+.congiunzione {
+    color: $white !important;
+    font-size: 20px !important;
+}
+
+@media only screen and (min-width: 1000px) {
+    .about {
+        height: 700px;
+
+        .tab-pane {
+            height: 400px;
+        }
+    }
 }
 
