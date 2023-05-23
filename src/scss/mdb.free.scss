@@ -56,6 +56,7 @@
 
 // MDB CORE
 @import './free/mixins';
+@import './custom/mixins';
 @import './free/utilities';
 
 // MDB CORE COMPONENTS
@@ -126,6 +127,7 @@
 }
 
 
+  
 
 body {
     background-color: $secondary;
@@ -314,3 +316,69 @@ a:hover{
     }
 }
 
+
+
+//PORTFOLIO SECTION
+.portfolio-box {
+    max-height: 35rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1.2rem;
+        
+    img {
+        width: 100%;
+        max-height: 35rem;
+        object-fit: fill;
+    }
+
+    .portfolio-info {
+        background-color: rgba($primary, 0.75);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+
+        .portfolio-caption {
+            text-align: center;
+            color: $secondary;
+            @include center-all;
+            width: 80%;
+        }
+
+       
+        h3 {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+ 
+    }
+    &:hover {
+        .portfolio-info {
+            opacity: 1;
+            visibility: visible;
+            @include transition-p;
+        }
+    }
+}
+
+
+.btn {
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: 170px;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    
+}
+
+h2 {
+    font-weight: 600;
+    color: $secondary;
+}
