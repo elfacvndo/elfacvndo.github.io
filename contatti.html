@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Riccardo De Cinti - Home</title>
+    <title>Riccardo De Cinti - Contatti</title>
     <!-- Site icon -->
     <link rel="icon" href="/img/svg/Logo ric bianco.svg" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -18,8 +18,131 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link rel="stylesheet" href="src/css/mdb.free.min.css" />
+    <script src="./js/index.js"></script>
   </head>
-    <body>
+    <body class="bg-primary">
+
+           <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+      <!-- Container wrapper -->
+      <div class="container menu">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarCenteredExample"
+          aria-controls="navbarCenteredExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarCenteredExample"
+        >
+          <!-- Left links -->
+          <ul class="navbar-nav mb-2 mb-lg-0 menu">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/portfolio.html">Portfolio</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/contatti.html"
+                >Contatti</a>
+              </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <!--FORM-->
+    <div class="container-fluid bg-primary my-5">
+      <div class="row">
+        <div class="col-lg-6 text-center my-lg-5 pt-lg-5 my-md-5 my-sm-5 my-5">
+          <h2>Seguimi sui social</h2>
+            <!-- Instagram -->
+            <a class="btn text-white" style="background-color: black;" href="https://www.instagram.com/decinti_graphic/" target="_blank" role="button">
+              <i class="fab fa-instagram"></i>
+              </a>
+              <!-- Linkedin -->
+              <a class="btn text-white" style="background-color: black;" href="https://www.linkedin.com/in/riccardo-de-cinti-bb5775193/" target="_blank" role="button">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <!-- Github -->
+              <a class="btn text-white" style="background-color:black;" href="https://github.com/elfacvndo" target="_blank" role="button">
+                <i class="fab fa-github"></i>
+              </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-7 mx-md-auto mx-sm-auto">
+          <div class="text-center text-secondary my-4">
+            <h2>Contattami</h2>
+        </div>
+        <form>
+          <!-- 2 column grid layout with text inputs for the first and last names -->
+          <div class="row mb-4">
+            <div class="col">
+              <div class="form-outline">
+                <input type="text" id="name" class="form-control" required />
+                <label class="form-label" for="name">Nome e Cognome</label>
+              </div>
+            </div>
+          </div>
+            
+            
+          <!-- Text input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="form6Example3" class="form-control" />
+            <label class="form-label" for="form6Example3">Nome azienda</label>
+          </div>
+        
+          <!-- Text input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="form6Example4" class="form-control" />
+            <label class="form-label" for="form6Example4">Indirizzo</label>
+          </div>
+        
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="email" class="form-control"required/>
+            <label class="form-label" for="email">Email</label>
+          </div>
+        
+          <!-- Number input -->
+          <div class="form-outline mb-4">
+            <input type="number" id="form6Example6" class="form-control" />
+            <label class="form-label" for="form6Example6">Telefono</label>
+          </div>
+        
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea class="form-control" id="message" re rows="4"></textarea>
+            <label class="form-label" for="message">Messaggio</label>
+          </div>
+        
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+            <label class="form-check-label" for="form6Example8"> Accetto i termini e le condizioni </label>
+          </div>
+        
+          <!-- Submit button -->
+          <button type="submit" class="btn bottone-1 mb-4 d-flex justify-content-center" onclick="sendMail()">Invia</button>
+        </form>
+      </div>
+    </div>
+
+
+
         
 
 
@@ -28,7 +151,16 @@
 
 
          <!-- MDB -->
+    
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+      <script type="text/javascript">
+       (function(){
+      emailjs.init("e0kpg8Fe-zxL1R6rf");
+             })();
+</script>
     <!-- Custom scripts -->
     <script type="text/javascript"></script>
     </body>

@@ -280,7 +280,7 @@ a:hover{
         font-size: 1.5rem;
     }
 
-    a {
+    .bottone {
         background-color: $primary;
         color: $secondary;
         padding: 3px 10px;
@@ -292,7 +292,7 @@ a:hover{
         align-items: center;
     }
 
-    a:hover {
+    .bottone:hover {
         background-color: $secondary;
         color: $primary;
         border: 1px solid $primary;
@@ -381,4 +381,32 @@ a:hover{
 h2 {
     font-weight: 600;
     color: $secondary;
+}
+
+//CONTATTI SECTION
+
+.bottone-1 {
+    background-color: $secondary;
+    color: $primary;
+    z-index: 1;
+}
+.btn {
+    position: relative;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    font-weight: 600;
+    font-size: 1.2rem ;
+    margin: 10px auto;
+}
+
+.form-check-input:checked {
+    background-image: none;
+    background-color: $secondary;
+}
+
+.form-check-input {
+    background-color: $primary;
 }
