@@ -365,6 +365,13 @@ a:hover{
     }
 }
 
+.logo-footer {
+    height: 70px;
+    width: auto;
+    margin-top: 50px;
+    
+}
+
 
 .btn {
     position: absolute;
@@ -380,6 +387,10 @@ a:hover{
 
 h2 {
     font-weight: 600;
+    color: $secondary;
+}
+
+.titolo-sezione {
     color: $secondary;
 }
 
@@ -409,4 +420,9 @@ h2 {
 
 .form-check-input {
     background-color: $primary;
+}
+
+.logo-nero{
+
+    height: 150px;
 }
