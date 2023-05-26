@@ -133,9 +133,17 @@ body {
     background-color: $secondary;
 }
 
+.logo-navbar {
+    height: 70px;
+    width: auto;
+    
+    
+    
+}
 .menu {
     width: 100%;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .body-logo {
@@ -315,6 +323,7 @@ a:hover{
         }
     }
 }
+
 
 
 
