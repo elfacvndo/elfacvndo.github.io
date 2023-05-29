@@ -131,20 +131,37 @@
 
 body {
     background-color: $secondary;
+    overflow-x: hidden;
 }
 
 .logo-navbar {
     height: 70px;
     width: auto;
     
-    
-    
 }
+
 .menu {
     width: 100%;
     justify-content: space-around;
-    margin: 0 auto;
+    
 }
+
+.icon-nav-social {
+    background-color: $primary;
+    padding: 2px 12px;
+    margin-right: 2rem;
+
+    &:hover {
+        background-color: $primary;
+        transform: scale(1.4);
+        transition: transform 0.3s ease-in-out;
+        box-shadow: none;
+        
+    }
+
+}
+
+
 
 .body-logo {
     padding-bottom: 6rem;
@@ -312,6 +329,13 @@ a:hover{
 .congiunzione {
     color: $white !important;
     font-size: 20px !important;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .menu {
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
