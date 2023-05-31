@@ -146,6 +146,12 @@ body {
     
 }
 
+.far-address-card {
+    width: 500px;
+    height: auto;
+    background-color: $secondary;
+}
+
 .icon-nav-social {
     background-color: $primary;
     padding: 2px 12px;
@@ -227,7 +233,7 @@ a:hover{
 
 .about {
 
-    height: 1300px;
+    height: 1200px;
      
     .tab-pane {
         height: 700px;
